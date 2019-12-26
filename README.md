@@ -1,7 +1,7 @@
 # git_cancel
 Git Commit Cancel Test
 
-##  작업 취소하기
+##  Git 작업 취소하기
 	- HEAD 를 이전 식별자로 옮기고 상태를 Staging 으로 변경하기 ( 최신 commit 취소 )
 	  git reset --soft HEAD~
 	  git restore <file path>
