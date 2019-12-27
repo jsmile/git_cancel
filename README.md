@@ -20,7 +20,7 @@ Git Commit Cancel Test
 	- 파일에 대해 commit 을 취소하고 Staging 영역으로 복원( Add 된 상태로 복원 )
 	  git reset HEAD <file path>
 	- 파일에 대해 add 를 취소하고 working 영역으로 복원( working 영역 작업결과로 복원 )
-	  git checkout -- <file path>
+	  git rm --cached <file path>
 	- 최신 commit 나 add 에서 해당 파일을 삭제하고 해당 파일을 working directory 작업내용으로 복귀시킴
 	  git rm --cached <file path>
 	- working directory 의 변경사항까지도 모두 취소하고 그 이전의 commit 으로 복귀
@@ -30,15 +30,13 @@ Git Commit Cancel Test
 	  git checkout <식별자>
 	- 해당 파일 식별자의 Staging 상태( add 된 상태 )로 복원
 	  git checkout <식별자> -- <file path>
-	- 해당 파일을 Staging 상태에서 Working 영역 작업결과로 복원 
-	  git rm --cached <file path>  
 	- 최신 commit 나 add 에서 물리적인 파일삭제
 	  git rm -f <file path>		  
 	  
 ###	( 기타 : 차이점 확인하기 )
-	- working 영역과 최신 Staging 영역과의 차이점 확인하기
+	- 최신 commit 과 working 영역의 차이점 확인하기
 	  git diff
-	- Staging 영역과 최신 commit 과의 차이점 확인하기
+	- 최신 Staging 영역과 working 영역의 차이점 확인하기
      	  git diff --staged	
 	- 특정 파일의 변경사항 이력확인
 	  git log -- <file path>
