@@ -1,1 +1,1 @@
-commit 1 for Git Commit Cancel Test.
+commit 2 for Git Commit Cancel Test.
