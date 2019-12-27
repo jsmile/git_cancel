@@ -35,7 +35,7 @@ Git Commit Cancel Test
 	- 최신 commit 나 add 에서 물리적인 파일삭제
 	  git rm -f <file path>		  
 	  
-	( 기타 : 차이점 확인하기 )
+###	( 기타 : 차이점 확인하기 )
 	- working 영역과 최신 Staging 영역과의 차이점 확인하기
 	  git diff
 	- Staging 영역과 최신 commit 과의 차이점 확인하기
